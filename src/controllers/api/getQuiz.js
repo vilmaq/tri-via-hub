@@ -62,8 +62,6 @@ const getQuizById = async (req, res) => {
 
     const formattedQuiz = quiz.get({ plain: true });
 
-    console.log("formattedQuiz", formattedQuiz);
-
     res.status(200).json(formattedQuiz);
   } catch (err) {
     console.error(err);

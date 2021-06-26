@@ -7,9 +7,6 @@ const isAnswer = async (event) => {
   const question = $(event.currentTarget);
 
   if (answer.is("li")) {
-    console.log(answer);
-    console.log(question);
-
     const givenAnswer = answer.attr("data-answer");
 
     const options = {
@@ -77,7 +74,6 @@ const sendScore = async () => {
     console.log("Failed to save score");
   } else {
     window.location.replace("/dashboard");
-    console.log("score saved");
   }
 };
 

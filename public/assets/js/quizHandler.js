@@ -54,8 +54,6 @@ const createQuizQuestion = async (event) => {
 
   answersArray.push(correct_option, option2, option3, option4);
 
-  console.log(answersArray);
-
   const questionOptions = {
     method: "POST",
     headers: {
