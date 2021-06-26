@@ -46,7 +46,6 @@ const deleteQuiz = async (req, res) => {
 
 //Declared Create question
 const createQuestion = async (req, res) => {
-  console.log(newCreatedQuiz.id);
   try {
     const { question, correct_option } = req.body;
 

@@ -19,8 +19,6 @@ const handleSignup = async (req, res) => {
         (req.session.userId = newUser.id),
         res.status(201).json({ success: "User has been created!" });
     });
-
-    console.log(req.session.isLoggedIn);
   } catch (error) {
     console.error(error);
     return res.status(500).json({ error: "Failed to create user" });

@@ -116,8 +116,6 @@ const renderQuizPageById = async (req, res) => {
       ],
     });
 
-    // console.log(quiz)
-
     const plainQuiz = quiz.get({ plain: true });
 
     const questions = plainQuiz.questions.map((question) => {
@@ -149,8 +147,6 @@ const renderQuizPageById = async (req, res) => {
       ...plainQuiz,
       questions,
     };
-
-    console.log("x", JSON.stringify(x, null, 2));
 
     res.render("individual-quiz", { layout: "quiz", ...x });
   } catch (error) {

@@ -24,7 +24,6 @@ const getAllQuizzes = async () => {
       ],
     });
     const quizzes = allQuizzes.map((quiz) => quiz.get({ plain: true }));
-    console.log(util.inspect(quizzes, { depth: null }));
   } catch (error) {
     console.log(error);
   }
@@ -49,8 +48,6 @@ const getQuizById = async () => {
     });
 
     const formattedQuiz = singleQuiz.get({ plain: true });
-
-    console.log(util.inspect(formattedQuiz, { depth: null }));
   } catch (error) {
     console.log(error);
   }
@@ -80,8 +77,6 @@ const getQuizByTitle = async () => {
     });
 
     const formattedQuizzes = quizzes.map((quiz) => quiz.get({ plain: true }));
-
-    console.log(util.inspect(formattedQuizzes, { depth: null }));
   } catch (error) {
     console.log(error);
   }
@@ -100,8 +95,6 @@ const getQuizByCategory = async () => {
     });
 
     const formattedQuizzes = quizzes.map((quiz) => quiz.get({ plain: true }));
-
-    console.log(formattedQuizzes);
   } catch (error) {
     console.log(error);
   }
@@ -128,8 +121,6 @@ const getQuestionsByQuizId = async () => {
     const formattedQuestions = questions.map((question) =>
       question.get({ plain: true })
     );
-
-    console.log(formattedQuestions);
   } catch (error) {
     console.log(error);
   }
@@ -148,8 +139,6 @@ const getUserQuizzes = async () => {
     });
 
     const formattedUser = user.get({ plain: true });
-
-    console.log(util.inspect(formattedUser, { depth: null }));
   } catch (error) {
     console.log(error);
   }
@@ -172,8 +161,6 @@ const getUserFavourites = async () => {
     });
 
     const formattedUser = singleUser.get({ plain: true });
-
-    console.log(util.inspect(formattedUser, { depth: null }));
   } catch (error) {
     console.log(error);
   }
