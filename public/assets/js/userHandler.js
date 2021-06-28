@@ -1,6 +1,9 @@
 const handleLogin = async (event) => {
   event.preventDefault();
 
+  const loginToast = $("#loginToast");
+  const showLoginToast = new bootstrap.Toast(loginToast);
+
   const usernameEmail = $("#usernameEmail").val();
   const password = $("#password").val();
 
@@ -19,7 +22,7 @@ const handleLogin = async (event) => {
   const response = await fetch("/auth/login", options);
 
   if (response.status !== 200) {
-    console.log("Failed to login! Please check your username and password.");
+    showLoginToast.show();
   } else {
     window.location.replace("/dashboard");
   }
@@ -27,6 +30,11 @@ const handleLogin = async (event) => {
 
 const handleSignup = async (event) => {
   event.preventDefault();
+
+  const signupToast = $("#signupToast");
+  const showSignupToast = new bootstrap.Toast(signupToast);
+  const passwordToast = $("#passwordToast");
+  const showPasswordToast = new bootstrap.Toast(passwordToast);
 
   const first_name = $("#first_name").val();
   const last_name = $("#last_name").val();
@@ -36,7 +44,7 @@ const handleSignup = async (event) => {
   const confirmPassword = $("#confirmPassword").val();
 
   if (!first_name || !last_name || !username || !email || !password) {
-    console.log("You must complete all fields");
+    showSignupToast.show();
     return;
   }
 
@@ -59,12 +67,12 @@ const handleSignup = async (event) => {
     const response = await fetch("/auth/signup", options);
 
     if (response.status !== 201) {
-      console.log("FAILED TO CREATE USER");
+      showSignupToast.show();
     } else {
       window.location.replace("/dashboard");
     }
   } else {
-    console.log("PASSWORDS DO NOT MATCH!");
+    showPasswordToast.show();
   }
 };
 

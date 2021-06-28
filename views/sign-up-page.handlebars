@@ -38,3 +38,24 @@
     <button type="submit" class="btn btn-primary">Sign Up</button>
   </form>
 </div>
+
+<div class="toast position-absolute top-75 start-50 translate-middle" role="alert" aria-live="assertive" aria-atomic="true" id="signupToast">
+  <div class="toast-header">
+    <strong class="me-auto">Failed to signup!</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    All fields must be completed or username/email may already exist. Please check your details.
+  </div>
+</div>
+
+
+<div class="toast position-absolute top-75 start-50 translate-middle" role="alert" aria-live="assertive" aria-atomic="true" id="passwordToast">
+  <div class="toast-header">
+    <strong class="me-auto">Failed to signup!</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Make sure your given passwords match.
+  </div>
+</div>

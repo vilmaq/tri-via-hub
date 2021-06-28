@@ -23,12 +23,12 @@ const handleLogin = async (req, res) => {
       where: constructWhere(),
     });
 
-    const validPassword = await user.checkPassword(password);
-
     if (!user) {
       console.log("User does not exist!!!!!");
       return res.status(401).json({ error: "Failed to login" });
     }
+
+    const validPassword = await user.checkPassword(password);
 
     if (!validPassword) {
       console.log("Incorrect password");
