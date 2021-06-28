@@ -7,7 +7,7 @@ const privateViews = require("./privateViews");
 
 const router = Router();
 
-router.use(publicViews);
 router.use(authenticate, privateViews);
+router.use(publicViews);
 
 module.exports = router;

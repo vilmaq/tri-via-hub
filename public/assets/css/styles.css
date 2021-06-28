@@ -39,6 +39,10 @@ html {
   -webkit-tap-highlight-color: grey;
 }
 
+.btn {
+  width: 16rem;
+}
+
 .card-img-top {
   width: 286px;
   height: 429px;
