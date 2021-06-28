@@ -65,6 +65,11 @@ const createQuizQuestion = async (event) => {
 
   const answersArray = [];
 
+  if (!question || !correct_option || !option2 || !option3 || !option4) {
+    showQuestionFailToast.show();
+    return;
+  }
+
   answersArray.push(correct_option, option2, option3, option4);
 
   const questionOptions = {

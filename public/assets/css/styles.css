@@ -97,6 +97,10 @@ html {
   min-height: 150px;
 }
 
+.quizQuestion {
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 768px) {
   .quiz-card {
     width: 90%;
