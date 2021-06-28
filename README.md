@@ -1,6 +1,6 @@
 # Tri-via-hub
 
-You wanna play something interesting? Visit Tri-via-hub website and you could enjoy multiple quizzes at once. Tri-via-hub website is a single platform on which you could play quizzes and create quizzes related to nature, history, sports, science, geography etc.
+You wanna play something interesting? Visit the tri-via-hub website and you can enjoy multiple quizzes at once. The tri-via-hub website is a single platform on which you can play and create quizzes related to nature, history, sports, science, geography, and more.
 
 ## Deployed Github Page
 
