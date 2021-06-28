@@ -1,8 +1,9 @@
 {{> private-navbar}} 
 
-<div class="mt-4 position-fixed timerContainer"><i class='fas fa-stopwatch' style='font-size:2rem;'></i><span id="timer" style='font-size:2rem;'></span></div>
+<div class="mt-4 text-center"><i class='fas fa-stopwatch' style='font-size:2rem;'></i><span id="timer" style='font-size:2rem;'></span></div>
 
 <div class="card m-3 p-3 view-quiz w-50 text-center mx-auto" id="{{id}}">
+  {{#if questions}}
   {{#each questions as |question|}}
     <div class="question mt-3 my-4" id={{question.id}}>
       <div class="quizQuestion">{{question.question}}</div>
@@ -13,6 +14,9 @@
       </ul>
     </div>
   {{/each}}
+  {{else}}
+  <h2 class="text-danger">No questions found!</h2>
+  {{/if}}
 </div>
 
 <div class="text-center my-4">

@@ -8,18 +8,26 @@
   <section class="card-left m-2">
     <h3 class="text-center dashboard-quiz-heading m-4">Quizzes Created by Me!</h3>
     <div class="d-flex flex-wrap justify-content-evenly m-2" >
+      {{#if formattedCreatedQuizzes}}
       {{#each formattedCreatedQuizzes as |quiz| }}
         {{> quiz-dashboard-card}}
       {{/each}}
+      {{else}}
+      <h4 class="text-danger">You haven't created any quizzes!</h4>
+      {{/if}}
     </div>
   </section>
   
   <section class="card-left m-2">
-    <h3 class="text-center dashboard-quiz-heading m-4">Quizzes Played by me!</h3>
+    <h3 class="text-center dashboard-quiz-heading m-4">Quizzes Played by Me!</h3>
     <div class="d-flex flex-wrap justify-content-evenly m-2">
+      {{#if formattedPlayedQuizzes}}
       {{#each formattedPlayedQuizzes as |quiz| }}
         {{> quiz-recent-card}}
       {{/each}}
+      {{else}}
+      <h4 class="text-danger">You haven't Played any quizzes!</h4>
+      {{/if}}
     </div>
   </section>
 </div>
