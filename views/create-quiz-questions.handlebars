@@ -28,3 +28,23 @@
   </form>
 <button type="button" class="btn btn-primary" id="doneCreate">Done</button>
 </div>
+
+<div class="toast position-absolute top-75 start-50 translate-middle" role="alert" aria-live="assertive" aria-atomic="true" id="questionSuccessToast">
+  <div class="toast-header">
+    <strong class="me-auto">Question Created!</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    The question was created!
+  </div>
+</div>
+
+<div class="toast position-absolute top-75 start-50 translate-middle" role="alert" aria-live="assertive" aria-atomic="true" id="questionFailToast">
+  <div class="toast-header">
+    <strong class="me-auto">Failed to create question!</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Question failed to create! Please check the entered details.
+  </div>
+</div>

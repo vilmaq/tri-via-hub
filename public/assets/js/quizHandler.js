@@ -15,6 +15,11 @@ const searchCategories = async (event) => {
 const createQuizBase = async (event) => {
   event.preventDefault();
 
+  const quizSuccessToast = $("#quizSuccessToast");
+  const showQuizSuccessToast = new bootstrap.Toast(quizSuccessToast);
+  const quizFailToast = $("#quizFailToast");
+  const showQuizFailToast = new bootstrap.Toast(quizFailToast);
+
   const title = $("#quiz-title").val();
   const category_id = $("#category-select").val();
   const difficulty = $("#difficulty-select").val();
@@ -35,14 +40,22 @@ const createQuizBase = async (event) => {
   const response = await fetch("/api/quiz/create", options);
 
   if (response.status !== 201) {
-    console.log("Failed to create quiz!");
+    showQuizFailToast.show();
   } else {
-    window.location.replace(`/quiz/create/question`);
+    showQuizSuccessToast.show();
+    setTimeout(function () {
+      window.location.href = "/quiz/create/question";
+    }, 1000);
   }
 };
 
 const createQuizQuestion = async (event) => {
   event.preventDefault();
+
+  const questionSuccessToast = $("#questionSuccessToast");
+  const showQuestionSuccessToast = new bootstrap.Toast(questionSuccessToast);
+  const questionFailToast = $("#questionFailToast");
+  const showQuestionFailToast = new bootstrap.Toast(questionFailToast);
 
   const question = $("#question").val();
   const correct_option = $("#correct-option").val();
@@ -85,9 +98,12 @@ const createQuizQuestion = async (event) => {
   );
 
   if (response.status !== 201) {
-    console.log("Failed to create quiz!");
+    showQuestionFailToast.show();
   } else {
-    window.location.replace(`/quiz/create/question`);
+    showQuestionSuccessToast.show();
+    setTimeout(function () {
+      window.location.replace(`/quiz/create/question`);
+    }, 1000);
   }
 };
 
