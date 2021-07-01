@@ -1,5 +1,4 @@
 const { Router } = require("express");
-const { getApiQuestions } = require("../../controllers/api/getQuiz");
 
 const {
   renderDashboardPage,
