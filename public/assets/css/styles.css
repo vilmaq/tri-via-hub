@@ -21,6 +21,14 @@ body {
   width: auto;
 }
 
+.navbar {
+  background: radial-gradient(
+    circle,
+    rgba(174, 225, 238, 1) 0%,
+    rgba(148, 187, 233, 0.4500175070028011) 130%
+  );
+}
+
 .navbar .logo {
   padding-top: 10px;
   -webkit-transition: all 0.3s ease-out;
@@ -29,7 +37,11 @@ body {
 
 .navbar-nav {
   font-size: 1.2rem;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
+}
+
+.nav-item {
+  padding-right: 1.5rem;
 }
 
 html {
@@ -42,7 +54,12 @@ html {
 
 .homepageIntro {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+#homepageText {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .homepageIntro h2 {
