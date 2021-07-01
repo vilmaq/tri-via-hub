@@ -37,6 +37,29 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: grey;
+  scroll-behavior: smooth;
+}
+
+.homepageIntro {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.homepageIntro h2 {
+  margin: 0;
+}
+
+.homepageIntro h1 {
+  font-size: 6rem;
+}
+
+#homepageIllustration {
+  width: 45rem;
+  height: 45rem;
+}
+
+.scrollIcon {
+  margin-bottom: 15rem;
 }
 
 .btn {
