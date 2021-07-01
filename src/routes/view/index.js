@@ -10,6 +10,8 @@ const router = Router();
 
 router.use(publicViews);
 router.use(authenticate, privateViews);
-router.get("*", renderHomePage);
+router.get("*", (req, res) => {
+  res.redirect("/");
+});
 
 module.exports = router;

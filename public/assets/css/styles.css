@@ -52,6 +52,11 @@ html {
   scroll-behavior: smooth;
 }
 
+#error404 {
+  width: 45rem;
+  height: 45rem;
+}
+
 .homepageIntro {
   margin-top: 2rem;
   margin-bottom: 2.5rem;
