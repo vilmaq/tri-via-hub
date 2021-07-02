@@ -88,9 +88,15 @@ html {
   width: 16rem;
 }
 
+.card-img {
+  width: 300px;
+  height: 300px;
+  opacity: 70%;
+}
+
 .card-img-top {
   width: 286px;
-  height: 429px;
+  height: 200px;
 }
 
 .quiz-card {
@@ -116,8 +122,15 @@ html {
 }
 
 .card-title {
-  text-align: center;
-  color: #0894ec;
+  color: #7ab5dd;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+.homepageCategory {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 900;
 }
 
 .card-left {
