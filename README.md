@@ -63,7 +63,10 @@ The "create a quiz page" has the title, category and difficulty.If the user need
 
 ## Technology/Framework used
 
-- Workbench
+- MySQL (Workbench)
+- Handlebars
+- Express
+- Node.js
 - Postman
 - Bootstrap
 - JQuery
@@ -71,15 +74,15 @@ The "create a quiz page" has the title, category and difficulty.If the user need
 
 ## Features
 
-- Tri-via-hub helps to increase the knowledge of any age group.
+- tri-via-hub helps to increase the knowledge of any age group.
 - It helps in development of brain as it has quizzes related to any age group.
 - Just sign-up and login and you could view multiple quizzes related to nature, science and geography etc. so it's easily accessible.
 
 ## Project Documentation
 
 - Tri-via-hub is an interesting and involving website.
-- It brings people together by increasing the knowledge towards various fields.
-- It gives an exposure to every individual and of any age.
+- It brings people together by increasing their knowledge towards various fields.
+- It gives exposure to every individual of any age.
 
 ## Objectives
 
