@@ -1,3 +1,19 @@
+@import url(//db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold);
+@font-face {
+  font-family: "Circular Std Bold";
+  src: url("//db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.eot");
+  src: url("//db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.svg#Circular Std Bold")
+      format("svg");
+}
+
 body {
   background: rgb(174, 225, 238);
   background: radial-gradient(
@@ -52,11 +68,6 @@ html {
   scroll-behavior: smooth;
 }
 
-#error404 {
-  width: 45rem;
-  height: 45rem;
-}
-
 .homepageIntro {
   margin-top: 2rem;
   margin-bottom: 2.5rem;
@@ -84,6 +95,17 @@ html {
   margin-bottom: 15rem;
 }
 
+.homepageCard {
+  font-family: "Circular Std Bold", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(245, 246, 252, 0.1),
+    rgb(15, 156, 221, 0.9)
+  );
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
 .btn {
   width: 16rem;
 }
@@ -91,7 +113,7 @@ html {
 .card-img {
   width: 300px;
   height: 300px;
-  opacity: 70%;
+  opacity: 60%;
 }
 
 .card-img-top {
@@ -118,7 +140,8 @@ html {
 .categories {
   text-align: center;
   color: grey;
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 .card-title {
@@ -129,7 +152,7 @@ html {
 
 .homepageCategory {
   color: white;
-  font-size: 1.7rem;
+  font-size: 3rem;
   font-weight: 900;
 }
 
