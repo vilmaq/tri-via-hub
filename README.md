@@ -8,6 +8,8 @@ Click [Heroku](https://powerful-journey-42110.herokuapp.com/) to view project.
 
 **Contributors**
 
+Leon: [Github](https://github.com/Leon3005)
+
 Vilma: [Github](https://github.com/vilmaq)
 
 Nazim: [Github](https://github.com/MRasheed1991)
@@ -15,8 +17,6 @@ Nazim: [Github](https://github.com/MRasheed1991)
 Nazia: [Github](https://github.com/Nrasool21)
 
 Soumeya Hassan: [Github](https://github.com/SoumeyaH)
-
-Leon: [Github](https://github.com/Leon3005)
 
 Eti Priya: [Github](https://github.com/Etipriya)
 
